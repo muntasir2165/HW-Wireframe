@@ -1,4 +1,4 @@
-/*The commented out block below is used for detbugging the layout's margin and padding*/
+/*The commented out block below was used for debugging the layout's paddings and margins*/
 /** {
 	border-width: 2px;
 	border-style: solid;
@@ -13,7 +13,19 @@ body {
 	font-size: 18px;
 	text-align: center;
 	margin:0 auto;
-	height: 560px; 	
+	height: 560px;
+}
+
+header, nav, footer {
+	height: 10%;
+	margin-top: 1%;
+	margin-bottom: 1%;
+	padding-top: 1%;
+	padding-bottom: 1%;
+}
+
+header, nav, section, aside, footer {
+	background: #ebebeb;
 }
 
 div {
@@ -40,27 +52,12 @@ article {
 aside {
 	float: right;
 	height: 100%;
-	width: 35%;
-}
-
-header, nav, footer {
-	height: 10%;
-	margin-top: 1%;
-	margin-bottom: 1%;
-}
-
-header, nav, section, aside, footer{
-	background: #ebebeb;
-}
-
-#section {
-	padding-top: 2%;
-	padding-bottom: 2%;
-	margin-bottom: 5%;
+	width: 38%;
 }
 
 #article {
-	padding-top: 3%;
+	padding-top: 5%;
+	margin-top: 10%;
 }
 
 #header, #paragraph {
@@ -73,13 +70,8 @@ header, nav, section, aside, footer{
 
 #header {
 	margin-bottom: 1%;
-	font-weight: bold;
 }
 
 #paragraph {
 	margin-top: 1%;
-}
-
-#aside {
-	margin-top: 5%;
 }
